@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -14,39 +14,77 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Metro___Check_Your_Time" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="02b-KQ-8Lv" userLabel="Top Bar">
-                                <rect key="frame" x="0.0" y="20" width="320" height="61"/>
+                                <rect key="frame" x="0.0" y="59" width="430" height="121"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tjP-x1-YuJ" userLabel="Account bar">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="30.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="60.666666666666664"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.01666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFw-lQ-CwL" userLabel="Month bar">
-                                        <rect key="frame" x="0.0" y="30.5" width="320" height="30.5"/>
+                                        <rect key="frame" x="0.0" y="60.666666666666671" width="430" height="60.333333333333329"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uy-yk-jHF" userLabel="Prev month">
+                                                <rect key="frame" x="8" y="8" width="44.666666666666664" height="44.333333333333336"/>
+                                                <color key="backgroundColor" red="0.0" green="1" blue="0.25143062300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="8uy-yk-jHF" secondAttribute="height" multiplier="1:1" id="UhB-IW-LBR"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="arrow.backward.circle.fill" catalog="system"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Декабрь 2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPj-u1-tpI">
+                                                <rect key="frame" x="159" y="19.999999999999986" width="112.33333333333331" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJU-tj-jmE" userLabel="Next month">
+                                                <rect key="frame" x="377.33333333333331" y="8" width="44.666666666666686" height="44.333333333333336"/>
+                                                <color key="backgroundColor" red="0.0" green="1" blue="0.25143062300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="kJU-tj-jmE" secondAttribute="height" multiplier="1:1" id="TKI-Te-eXw"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="arrow.forward.circle.fill" catalog="system"/>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="8uy-yk-jHF" firstAttribute="leading" secondItem="iFw-lQ-CwL" secondAttribute="leading" constant="8" id="59Q-qE-u2a"/>
+                                            <constraint firstItem="kJU-tj-jmE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VPj-u1-tpI" secondAttribute="trailing" constant="8" symbolic="YES" id="ANe-5d-ymQ"/>
+                                            <constraint firstItem="VPj-u1-tpI" firstAttribute="centerX" secondItem="iFw-lQ-CwL" secondAttribute="centerX" id="GSA-NN-SHb"/>
+                                            <constraint firstItem="8uy-yk-jHF" firstAttribute="top" secondItem="iFw-lQ-CwL" secondAttribute="top" constant="8" id="VXk-jB-1Un"/>
+                                            <constraint firstItem="VPj-u1-tpI" firstAttribute="centerY" secondItem="iFw-lQ-CwL" secondAttribute="centerY" id="WEo-fF-fkh"/>
+                                            <constraint firstAttribute="bottom" secondItem="kJU-tj-jmE" secondAttribute="bottom" constant="8" id="Wle-1J-GmI"/>
+                                            <constraint firstAttribute="trailing" secondItem="kJU-tj-jmE" secondAttribute="trailing" constant="8" id="g0N-eF-7KZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="8uy-yk-jHF" secondAttribute="bottom" constant="8" id="hcd-XG-Nx3"/>
+                                            <constraint firstItem="kJU-tj-jmE" firstAttribute="top" secondItem="iFw-lQ-CwL" secondAttribute="top" constant="8" id="tMp-dz-Uhz"/>
+                                            <constraint firstItem="VPj-u1-tpI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8uy-yk-jHF" secondAttribute="trailing" constant="8" symbolic="YES" id="zyk-DZ-jve"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3vX-m9-lV6" userLabel="Bottom bar">
-                                <rect key="frame" x="0.0" y="466" width="320" height="102"/>
+                                <rect key="frame" x="0.0" y="764.33333333333337" width="430" height="167.66666666666663"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RpR-4U-vne" userLabel="Switch bar">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="30.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="50.333333333333336"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="YBn-EN-Jt1" userLabel="Switch bar view">
-                                                <rect key="frame" x="16" y="-0.5" width="296" height="31"/>
+                                                <rect key="frame" x="16" y="9.6666666666666288" width="406" height="31"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Учитывая будущие смены" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxj-Xr-Ik1">
-                                                        <rect key="frame" x="0.0" y="0.0" width="217" height="31"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="327" height="31"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3pZ-cu-KzT">
-                                                        <rect key="frame" x="247" y="0.0" width="51" height="31"/>
+                                                        <rect key="frame" x="357" y="0.0" width="51" height="31"/>
                                                     </switch>
                                                 </subviews>
                                             </stackView>
@@ -59,25 +97,25 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OPO-VC-X0M" userLabel="Navigator bar">
-                                        <rect key="frame" x="0.0" y="30.5" width="320" height="71.5"/>
+                                        <rect key="frame" x="0.0" y="50.33333333333325" width="430" height="117.33333333333331"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="m3N-y2-6Ub" userLabel="Navigator button">
-                                                <rect key="frame" x="-13" y="8" width="346" height="55.5"/>
+                                                <rect key="frame" x="42" y="8" width="346" height="101.33333333333333"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7i-5c-tTA" userLabel="Calendar">
-                                                        <rect key="frame" x="0.0" y="0.0" width="110" height="55.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="110" height="101.33333333333333"/>
                                                         <color key="backgroundColor" red="0.0" green="1" blue="0.25143062300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Календарь"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afx-eF-g9L" userLabel="Now">
-                                                        <rect key="frame" x="118" y="0.0" width="110" height="55.5"/>
+                                                        <rect key="frame" x="118" y="0.0" width="110" height="101.33333333333333"/>
                                                         <color key="backgroundColor" red="0.0" green="1" blue="0.25143062300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Сейчас"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uuU-Nr-6Lq" userLabel="Norma">
-                                                        <rect key="frame" x="236" y="0.0" width="110" height="55.5"/>
+                                                        <rect key="frame" x="236" y="0.0" width="110" height="101.33333333333333"/>
                                                         <color key="backgroundColor" red="0.0" green="1" blue="0.25143062300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Норма"/>
@@ -108,11 +146,18 @@
                             <constraint firstItem="02b-KQ-8Lv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f0Z-EE-Byj"/>
                             <constraint firstItem="02b-KQ-8Lv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="l8H-M0-Du5"/>
                             <constraint firstAttribute="bottom" secondItem="3vX-m9-lV6" secondAttribute="bottom" id="m9h-Fc-gdn"/>
-                            <constraint firstItem="02b-KQ-8Lv" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.107296" id="ohc-4I-gxU"/>
+                            <constraint firstItem="02b-KQ-8Lv" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.13" id="ohc-4I-gxU"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="calendar" destination="s7i-5c-tTA" id="qYj-ih-uxL"/>
+                        <outlet property="nextButton" destination="kJU-tj-jmE" id="zKw-tu-zP8"/>
+                        <outlet property="norma" destination="uuU-Nr-6Lq" id="EQi-yy-AkY"/>
+                        <outlet property="now" destination="Afx-eF-g9L" id="z9B-52-x7o"/>
+                        <outlet property="prevButton" destination="8uy-yk-jHF" id="IrL-wX-1mY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -120,6 +165,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.backward.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="arrow.forward.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
