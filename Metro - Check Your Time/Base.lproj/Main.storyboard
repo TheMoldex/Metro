@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -14,116 +14,120 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Metro___Check_Your_Time" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="93" translatesAutoresizingMaskIntoConstraints="NO" id="fdx-eo-odT" userLabel="Month bar">
-                                <rect key="frame" x="16" y="70" width="377.33333333333331" height="34.333333333333343"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="02b-KQ-8Lv" userLabel="Top Bar">
+                                <rect key="frame" x="0.0" y="20" width="320" height="61"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asK-W7-T1m" userLabel="Last Month">
-                                        <rect key="frame" x="0.0" y="0.0" width="75" height="34.333333333333336"/>
-                                        <color key="backgroundColor" red="0.0" green="1" blue="0.25143062300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYG-ub-dFt">
-                                        <rect key="frame" x="168" y="0.0" width="41.333333333333343" height="34.333333333333336"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0b-B4-FPW" userLabel="Future Month">
-                                        <rect key="frame" x="302.33333333333331" y="0.0" width="75" height="34.333333333333336"/>
-                                        <color key="backgroundColor" red="0.0" green="1" blue="0.25143062300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tjP-x1-YuJ" userLabel="Account bar">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="30.5"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.01666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFw-lQ-CwL" userLabel="Month bar">
+                                        <rect key="frame" x="0.0" y="30.5" width="320" height="30.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
                                 </subviews>
                             </stackView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qB0-k7-kXW">
-                                <rect key="frame" x="132" y="269" width="150" height="4"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </progressView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5vs-Jv-5Gb" userLabel="Account Bar">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oba-u4-u7r" userLabel="Under Bottom Bar">
-                                <rect key="frame" x="0.0" y="680" width="414" height="56"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3vX-m9-lV6" userLabel="Bottom bar">
+                                <rect key="frame" x="0.0" y="466" width="320" height="102"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="gOq-d6-3Be" userLabel="Bottom Button Bar">
-                                        <rect key="frame" x="29" y="11" width="356" height="34.333333333333336"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RpR-4U-vne" userLabel="Switch bar">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="30.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Rw-hu-CyN" userLabel="Calandar">
-                                                <rect key="frame" x="0.0" y="0.0" width="110" height="34.333333333333336"/>
-                                                <color key="backgroundColor" red="0.0" green="1" blue="0.25143062300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Календарь"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7G-Bb-Mhf" userLabel="Today">
-                                                <rect key="frame" x="123" y="0.0" width="110" height="34.333333333333336"/>
-                                                <color key="backgroundColor" red="0.0" green="1" blue="0.25143062300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Сегодня"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZo-Sk-c09" userLabel="Hours work">
-                                                <rect key="frame" x="246" y="0.0" width="110" height="34.333333333333336"/>
-                                                <color key="backgroundColor" red="0.061491080529999999" green="1" blue="0.29746096280000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Норма"/>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="YBn-EN-Jt1" userLabel="Switch bar view">
+                                                <rect key="frame" x="16" y="-0.5" width="296" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Учитывая будущие смены" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxj-Xr-Ik1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="217" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3pZ-cu-KzT">
+                                                        <rect key="frame" x="247" y="0.0" width="51" height="31"/>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
-                                    </stackView>
+                                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                        <constraints>
+                                            <constraint firstItem="YBn-EN-Jt1" firstAttribute="leading" secondItem="RpR-4U-vne" secondAttribute="leading" constant="16" id="bNE-s5-Ycs"/>
+                                            <constraint firstItem="YBn-EN-Jt1" firstAttribute="centerY" secondItem="RpR-4U-vne" secondAttribute="centerY" id="sg2-Bi-D8b"/>
+                                            <constraint firstAttribute="trailing" secondItem="YBn-EN-Jt1" secondAttribute="trailing" constant="8" id="w39-QS-sxM"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OPO-VC-X0M" userLabel="Navigator bar">
+                                        <rect key="frame" x="0.0" y="30.5" width="320" height="71.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="m3N-y2-6Ub" userLabel="Navigator button">
+                                                <rect key="frame" x="-13" y="8" width="346" height="55.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7i-5c-tTA" userLabel="Calendar">
+                                                        <rect key="frame" x="0.0" y="0.0" width="110" height="55.5"/>
+                                                        <color key="backgroundColor" red="0.0" green="1" blue="0.25143062300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Календарь"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afx-eF-g9L" userLabel="Now">
+                                                        <rect key="frame" x="118" y="0.0" width="110" height="55.5"/>
+                                                        <color key="backgroundColor" red="0.0" green="1" blue="0.25143062300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Сейчас"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uuU-Nr-6Lq" userLabel="Norma">
+                                                        <rect key="frame" x="236" y="0.0" width="110" height="55.5"/>
+                                                        <color key="backgroundColor" red="0.0" green="1" blue="0.25143062300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Норма"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstItem="m3N-y2-6Ub" firstAttribute="centerY" secondItem="OPO-VC-X0M" secondAttribute="centerY" id="dH8-nO-1Fx"/>
+                                            <constraint firstItem="m3N-y2-6Ub" firstAttribute="centerX" secondItem="OPO-VC-X0M" secondAttribute="centerX" id="kJN-EP-P6j"/>
+                                            <constraint firstAttribute="bottom" secondItem="m3N-y2-6Ub" secondAttribute="bottom" constant="8" id="nBg-vz-n94"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruQ-cT-JPD">
-                                <rect key="frame" x="58" y="139" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aOr-Zc-K1d" userLabel="Switch future">
-                                <rect key="frame" x="0.0" y="629" width="414" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xaj-4R-aNh">
-                                        <rect key="frame" x="343" y="8" width="49" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </switch>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUq-k3-2up">
-                                        <rect key="frame" x="26" y="15" width="42" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemMintColor"/>
-                            </view>
+                                <constraints>
+                                    <constraint firstItem="OPO-VC-X0M" firstAttribute="height" secondItem="3vX-m9-lV6" secondAttribute="height" multiplier="0.7" id="ZZ6-TC-Kov"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Oba-u4-u7r" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="24R-hq-Sdc"/>
-                            <constraint firstItem="Oba-u4-u7r" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="OSC-WS-KnG"/>
-                            <constraint firstItem="Oba-u4-u7r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fG5-QZ-uMl"/>
+                            <constraint firstItem="3vX-m9-lV6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2iM-Z0-nlf"/>
+                            <constraint firstItem="3vX-m9-lV6" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.18" id="96U-A6-4Po"/>
+                            <constraint firstItem="02b-KQ-8Lv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LkC-fD-cJV"/>
+                            <constraint firstItem="3vX-m9-lV6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Roo-xY-qg4"/>
+                            <constraint firstItem="02b-KQ-8Lv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f0Z-EE-Byj"/>
+                            <constraint firstItem="02b-KQ-8Lv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="l8H-M0-Du5"/>
+                            <constraint firstAttribute="bottom" secondItem="3vX-m9-lV6" secondAttribute="bottom" id="m9h-Fc-gdn"/>
+                            <constraint firstItem="02b-KQ-8Lv" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.107296" id="ohc-4I-gxU"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53.623188405797109" y="-34.239130434782609"/>
+            <point key="canvasLocation" x="52" y="-35.532233883058474"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
