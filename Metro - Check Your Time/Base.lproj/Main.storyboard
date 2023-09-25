@@ -6,6 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,7 +23,45 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tjP-x1-YuJ" userLabel="Account bar">
                                         <rect key="frame" x="0.0" y="0.0" width="430" height="60.666666666666664"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Норма" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsL-S2-3c2">
+                                                <rect key="frame" x="8" y="11" width="54" height="37.666666666666664"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="n7v-4k-Fys" userLabel="Account + menu">
+                                                <rect key="frame" x="299.66666666666669" y="13" width="114.33333333333331" height="34.333333333333336"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQ5-BH-k2V" userLabel="Account">
+                                                        <rect key="frame" x="0.0" y="0.0" width="49.666666666666664" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" red="0.0" green="1" blue="0.25143062300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="person.crop.circle" catalog="system"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJV-7d-caN" userLabel="Menu">
+                                                        <rect key="frame" x="64.666666666666629" y="0.0" width="49.666666666666657" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" red="0.0" green="1" blue="0.25143062300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <menu key="menu" id="Aya-Gt-D0t">
+                                                            <children>
+                                                                <command title="Item 1" id="C9F-Nr-bFW"/>
+                                                                <command title="Item 2" id="pDe-yj-bck"/>
+                                                            </children>
+                                                        </menu>
+                                                        <state key="normal" image="ellipsis.circle" catalog="system"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.01666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="n7v-4k-Fys" secondAttribute="trailing" constant="16" id="JJ2-OQ-uGS"/>
+                                            <constraint firstItem="n7v-4k-Fys" firstAttribute="centerY" secondItem="tjP-x1-YuJ" secondAttribute="centerY" id="YoY-1s-iYr"/>
+                                            <constraint firstAttribute="bottom" secondItem="VsL-S2-3c2" secondAttribute="bottom" constant="12" id="c9d-gk-eMz"/>
+                                            <constraint firstItem="VsL-S2-3c2" firstAttribute="leading" secondItem="tjP-x1-YuJ" secondAttribute="leading" constant="8" id="gfO-qJ-sDG"/>
+                                            <constraint firstItem="n7v-4k-Fys" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VsL-S2-3c2" secondAttribute="trailing" constant="8" symbolic="YES" id="jUR-qE-JJZ"/>
+                                            <constraint firstItem="VsL-S2-3c2" firstAttribute="top" secondItem="tjP-x1-YuJ" secondAttribute="top" constant="11" id="ylR-CP-FCu"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFw-lQ-CwL" userLabel="Month bar">
                                         <rect key="frame" x="0.0" y="60.666666666666671" width="430" height="60.333333333333329"/>
@@ -161,12 +200,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="-35.532233883058474"/>
+            <point key="canvasLocation" x="384.80000000000001" y="-60.719640179910051"/>
         </scene>
     </scenes>
     <resources>
         <image name="arrow.backward.circle.fill" catalog="system" width="128" height="123"/>
         <image name="arrow.forward.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="ellipsis.circle" catalog="system" width="128" height="123"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
