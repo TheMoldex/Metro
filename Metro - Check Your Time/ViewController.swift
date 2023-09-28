@@ -28,6 +28,5 @@ class ViewController: UIViewController {
         prevButton.layer.cornerRadius = prevButton.frame.width / 2
         nextButton.layer.cornerRadius = nextButton.frame.width / 2
     }
-
 }
 

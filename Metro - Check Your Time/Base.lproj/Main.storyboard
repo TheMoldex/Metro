@@ -115,6 +115,9 @@
                                                         <color key="backgroundColor" red="0.0" green="1" blue="0.25143062300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Норма"/>
+                                                        <connections>
+                                                            <action selector="norma:" destination="BYZ-38-t0r" eventType="touchUpInside" id="55d-Fc-etK"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -165,6 +168,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1282.3255813953488" y="-61.15879828326181"/>
+        </scene>
+        <!--Now VC-->
+        <scene sceneID="scB-tE-Z1N">
+            <objects>
+                <viewController storyboardIdentifier="NowVCViewController" id="hkw-aL-Mvq" userLabel="Now VC" customClass="NowVCViewController" customModule="Metro___Check_Your_Time" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YpG-E7-NQY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oMS-yj-9Oo" userLabel="Navigator bar">
+                                <rect key="frame" x="0.0" y="600.5" width="375" height="66.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yCg-UP-UFD" userLabel="Navigator button">
+                                        <rect key="frame" x="14.5" y="16" width="346" height="34.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7H-iZ-m9G" userLabel="Calendar">
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="34.5"/>
+                                                <color key="backgroundColor" red="0.0" green="1" blue="0.25143062300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Календарь"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXB-Gr-glx" userLabel="Now">
+                                                <rect key="frame" x="118" y="0.0" width="110" height="34.5"/>
+                                                <color key="backgroundColor" red="0.0" green="1" blue="0.25143062300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Сейчас"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMx-IS-2Xm" userLabel="Norma">
+                                                <rect key="frame" x="236" y="0.0" width="110" height="34.5"/>
+                                                <color key="backgroundColor" red="0.0" green="1" blue="0.25143062300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Норма"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstItem="yCg-UP-UFD" firstAttribute="centerX" secondItem="oMS-yj-9Oo" secondAttribute="centerX" id="CKB-TI-XKg"/>
+                                    <constraint firstItem="yCg-UP-UFD" firstAttribute="centerY" secondItem="oMS-yj-9Oo" secondAttribute="centerY" id="U6K-Im-vji"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sba-vo-VwM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oMS-yj-9Oo" firstAttribute="leading" secondItem="sba-vo-VwM" secondAttribute="leading" id="0bB-LI-jiY"/>
+                            <constraint firstItem="oMS-yj-9Oo" firstAttribute="centerX" secondItem="sba-vo-VwM" secondAttribute="centerX" id="935-Kd-NOF"/>
+                            <constraint firstItem="sba-vo-VwM" firstAttribute="bottom" secondItem="oMS-yj-9Oo" secondAttribute="bottom" id="FE1-RO-2Nu"/>
+                            <constraint firstItem="oMS-yj-9Oo" firstAttribute="top" secondItem="sba-vo-VwM" secondAttribute="top" constant="580.5" id="I4l-dw-Huq"/>
+                            <constraint firstItem="sba-vo-VwM" firstAttribute="bottom" secondItem="gXB-Gr-glx" secondAttribute="bottom" constant="16" id="Wxh-Rt-9C8"/>
+                            <constraint firstItem="oMS-yj-9Oo" firstAttribute="height" secondItem="YpG-E7-NQY" secondAttribute="height" multiplier="0.0997001" id="eyG-Om-fVX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bcc-4X-3ll" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1281" y="659"/>
         </scene>
         <!--Профиль-->
         <scene sceneID="tiO-oR-5j6">
