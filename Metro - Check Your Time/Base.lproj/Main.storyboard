@@ -177,55 +177,130 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oMS-yj-9Oo" userLabel="Navigator bar">
-                                <rect key="frame" x="0.0" y="600.5" width="375" height="66.5"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KnZ-Qh-NdY" userLabel="Navigator bar">
+                                <rect key="frame" x="0.0" y="583" width="375" height="84"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yCg-UP-UFD" userLabel="Navigator button">
-                                        <rect key="frame" x="14.5" y="16" width="346" height="34.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uuh-Ao-JFA" userLabel="Navigator button">
+                                        <rect key="frame" x="14.5" y="8" width="346" height="68"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7H-iZ-m9G" userLabel="Calendar">
-                                                <rect key="frame" x="0.0" y="0.0" width="110" height="34.5"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWL-GN-0bG" userLabel="Calendar">
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="68"/>
                                                 <color key="backgroundColor" red="0.0" green="1" blue="0.25143062300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Календарь"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXB-Gr-glx" userLabel="Now">
-                                                <rect key="frame" x="118" y="0.0" width="110" height="34.5"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozw-OM-olZ" userLabel="Now">
+                                                <rect key="frame" x="118" y="0.0" width="110" height="68"/>
                                                 <color key="backgroundColor" red="0.0" green="1" blue="0.25143062300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Сейчас"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMx-IS-2Xm" userLabel="Norma">
-                                                <rect key="frame" x="236" y="0.0" width="110" height="34.5"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqi-dI-cAm" userLabel="Norma">
+                                                <rect key="frame" x="236" y="0.0" width="110" height="68"/>
                                                 <color key="backgroundColor" red="0.0" green="1" blue="0.25143062300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Норма"/>
+                                                <connections>
+                                                    <action selector="norma:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rLs-Ug-8CA"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
-                                    <constraint firstItem="yCg-UP-UFD" firstAttribute="centerX" secondItem="oMS-yj-9Oo" secondAttribute="centerX" id="CKB-TI-XKg"/>
-                                    <constraint firstItem="yCg-UP-UFD" firstAttribute="centerY" secondItem="oMS-yj-9Oo" secondAttribute="centerY" id="U6K-Im-vji"/>
+                                    <constraint firstItem="uuh-Ao-JFA" firstAttribute="centerY" secondItem="KnZ-Qh-NdY" secondAttribute="centerY" id="Qh5-fv-shP"/>
+                                    <constraint firstItem="uuh-Ao-JFA" firstAttribute="centerX" secondItem="KnZ-Qh-NdY" secondAttribute="centerX" id="dQc-W0-8tZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="uuh-Ao-JFA" secondAttribute="bottom" constant="8" id="udX-wf-8Y0"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sba-vo-VwM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="oMS-yj-9Oo" firstAttribute="leading" secondItem="sba-vo-VwM" secondAttribute="leading" id="0bB-LI-jiY"/>
-                            <constraint firstItem="oMS-yj-9Oo" firstAttribute="centerX" secondItem="sba-vo-VwM" secondAttribute="centerX" id="935-Kd-NOF"/>
-                            <constraint firstItem="sba-vo-VwM" firstAttribute="bottom" secondItem="oMS-yj-9Oo" secondAttribute="bottom" id="FE1-RO-2Nu"/>
-                            <constraint firstItem="oMS-yj-9Oo" firstAttribute="top" secondItem="sba-vo-VwM" secondAttribute="top" constant="580.5" id="I4l-dw-Huq"/>
-                            <constraint firstItem="sba-vo-VwM" firstAttribute="bottom" secondItem="gXB-Gr-glx" secondAttribute="bottom" constant="16" id="Wxh-Rt-9C8"/>
-                            <constraint firstItem="oMS-yj-9Oo" firstAttribute="height" secondItem="YpG-E7-NQY" secondAttribute="height" multiplier="0.0997001" id="eyG-Om-fVX"/>
+                            <constraint firstItem="sba-vo-VwM" firstAttribute="bottom" secondItem="KnZ-Qh-NdY" secondAttribute="bottom" id="Akf-Ss-vvG"/>
+                            <constraint firstItem="sba-vo-VwM" firstAttribute="trailing" secondItem="KnZ-Qh-NdY" secondAttribute="trailing" id="SNh-wX-HhL"/>
+                            <constraint firstItem="KnZ-Qh-NdY" firstAttribute="leading" secondItem="sba-vo-VwM" secondAttribute="leading" id="aF6-zI-8Kf"/>
+                            <constraint firstItem="KnZ-Qh-NdY" firstAttribute="height" secondItem="YpG-E7-NQY" secondAttribute="height" multiplier="0.125937" id="sGo-GE-Mij"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bcc-4X-3ll" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1281" y="659"/>
+        </scene>
+        <!--Calendar VC-->
+        <scene sceneID="nN8-Rv-Ec6">
+            <objects>
+                <viewController storyboardIdentifier="CalendarVC" id="kXH-N4-ixk" userLabel="Calendar VC" customClass="CalendarVC" customModule="Metro___Check_Your_Time" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6tt-Xw-uSH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="npb-Bh-muo" userLabel="Navigator bar">
+                                <rect key="frame" x="0.0" y="583" width="375" height="84"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Nu8-k3-vVR" userLabel="Navigator button">
+                                        <rect key="frame" x="14.5" y="8" width="346" height="68"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llb-fF-OAC" userLabel="Calendar">
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="68"/>
+                                                <color key="backgroundColor" red="0.0" green="1" blue="0.25143062300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Календарь"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3i9-ib-uxa" userLabel="Now">
+                                                <rect key="frame" x="118" y="0.0" width="110" height="68"/>
+                                                <color key="backgroundColor" red="0.0" green="1" blue="0.25143062300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Сейчас"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDQ-UM-Bgk" userLabel="Norma">
+                                                <rect key="frame" x="236" y="0.0" width="110" height="68"/>
+                                                <color key="backgroundColor" red="0.0" green="1" blue="0.25143062300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Норма"/>
+                                                <connections>
+                                                    <action selector="norma:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0SF-Pd-H2I"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstItem="Nu8-k3-vVR" firstAttribute="centerX" secondItem="npb-Bh-muo" secondAttribute="centerX" id="9o8-79-9Vi"/>
+                                    <constraint firstItem="Nu8-k3-vVR" firstAttribute="centerY" secondItem="npb-Bh-muo" secondAttribute="centerY" id="ULA-Vh-nOL"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nu8-k3-vVR" secondAttribute="bottom" constant="8" id="aPT-jm-6gw"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="My1-mX-sog" userLabel="Add work shift">
+                                <rect key="frame" x="324" y="517" width="35" height="35"/>
+                                <color key="backgroundColor" red="0.061491080529999999" green="1" blue="0.29746096280000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="My1-mX-sog" secondAttribute="height" multiplier="1:1" id="WxK-oc-MdO"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ItX-gO-14a"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ItX-gO-14a" firstAttribute="trailing" secondItem="npb-Bh-muo" secondAttribute="trailing" id="8DO-hZ-Ccn"/>
+                            <constraint firstItem="My1-mX-sog" firstAttribute="height" secondItem="6tt-Xw-uSH" secondAttribute="height" multiplier="0.0524738" id="Dgr-uB-Lj9"/>
+                            <constraint firstItem="My1-mX-sog" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ItX-gO-14a" secondAttribute="leading" symbolic="YES" id="KVW-6R-Tat"/>
+                            <constraint firstItem="ItX-gO-14a" firstAttribute="bottom" secondItem="npb-Bh-muo" secondAttribute="bottom" id="Nng-7S-8Gn"/>
+                            <constraint firstItem="npb-Bh-muo" firstAttribute="top" secondItem="My1-mX-sog" secondAttribute="bottom" constant="31" id="Y3r-Ex-UxP"/>
+                            <constraint firstItem="ItX-gO-14a" firstAttribute="trailing" secondItem="My1-mX-sog" secondAttribute="trailing" constant="16" id="llb-6b-gHN"/>
+                            <constraint firstItem="npb-Bh-muo" firstAttribute="leading" secondItem="ItX-gO-14a" secondAttribute="leading" id="rtj-47-y3U"/>
+                            <constraint firstItem="npb-Bh-muo" firstAttribute="height" secondItem="6tt-Xw-uSH" secondAttribute="height" multiplier="0.125937" id="xjb-Q2-qCP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6RT-yW-MeW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2142" y="659"/>
         </scene>
         <!--Профиль-->
         <scene sceneID="tiO-oR-5j6">
@@ -267,6 +342,7 @@
         <image name="arrow.backward.circle.fill" catalog="system" width="128" height="123"/>
         <image name="arrow.forward.circle.fill" catalog="system" width="128" height="123"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
