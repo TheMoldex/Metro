@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MIq-Fz-5Wn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2DM-iJ-y5B">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -14,17 +14,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Metro___Check_Your_Time" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="02b-KQ-8Lv" userLabel="Top Bar">
-                                <rect key="frame" x="0.0" y="64" width="375" height="46.5"/>
+                                <rect key="frame" x="0.0" y="56" width="375" height="45.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFw-lQ-CwL" userLabel="Month bar">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="46.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="45.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uy-yk-jHF" userLabel="Prev month">
-                                                <rect key="frame" x="8" y="8" width="30.5" height="30.5"/>
+                                                <rect key="frame" x="8" y="8" width="29.5" height="29.5"/>
                                                 <color key="backgroundColor" red="0.0" green="1" blue="0.25143062300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="8uy-yk-jHF" secondAttribute="height" multiplier="1:1" id="UhB-IW-LBR"/>
@@ -33,13 +33,13 @@
                                                 <buttonConfiguration key="configuration" style="plain" image="arrow.backward.circle.fill" catalog="system"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Декабрь 2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPj-u1-tpI">
-                                                <rect key="frame" x="131.5" y="13" width="112.5" height="20.5"/>
+                                                <rect key="frame" x="131.5" y="12.5" width="112.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJU-tj-jmE" userLabel="Next month">
-                                                <rect key="frame" x="336.5" y="8" width="30.5" height="30.5"/>
+                                                <rect key="frame" x="337.5" y="8" width="29.5" height="29.5"/>
                                                 <color key="backgroundColor" red="0.0" green="1" blue="0.25143062300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="kJU-tj-jmE" secondAttribute="height" multiplier="1:1" id="TKI-Te-eXw"/>
@@ -65,13 +65,13 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3vX-m9-lV6" userLabel="Bottom bar">
-                                <rect key="frame" x="0.0" y="547" width="375" height="120"/>
+                                <rect key="frame" x="0.0" y="530.5" width="375" height="116.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RpR-4U-vne" userLabel="Switch bar">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="YBn-EN-Jt1" userLabel="Switch bar view">
-                                                <rect key="frame" x="16" y="2.5" width="351" height="31"/>
+                                                <rect key="frame" x="16" y="2" width="351" height="31"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Учитывая будущие смены" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxj-Xr-Ik1">
                                                         <rect key="frame" x="0.0" y="0.0" width="272" height="31"/>
@@ -93,25 +93,25 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OPO-VC-X0M" userLabel="Navigator bar">
-                                        <rect key="frame" x="0.0" y="36" width="375" height="84"/>
+                                        <rect key="frame" x="0.0" y="35" width="375" height="81.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="m3N-y2-6Ub" userLabel="Navigator button">
-                                                <rect key="frame" x="14.5" y="8" width="346" height="68"/>
+                                                <rect key="frame" x="14.5" y="8" width="346" height="65.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7i-5c-tTA" userLabel="Calendar">
-                                                        <rect key="frame" x="0.0" y="0.0" width="110" height="68"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="110" height="65.5"/>
                                                         <color key="backgroundColor" red="0.0" green="1" blue="0.25143062300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Календарь"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afx-eF-g9L" userLabel="Now">
-                                                        <rect key="frame" x="118" y="0.0" width="110" height="68"/>
+                                                        <rect key="frame" x="118" y="0.0" width="110" height="65.5"/>
                                                         <color key="backgroundColor" red="0.0" green="1" blue="0.25143062300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Сейчас"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uuU-Nr-6Lq" userLabel="Norma">
-                                                        <rect key="frame" x="236" y="0.0" width="110" height="68"/>
+                                                        <rect key="frame" x="236" y="0.0" width="110" height="65.5"/>
                                                         <color key="backgroundColor" red="0.0" green="1" blue="0.25143062300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Норма"/>
@@ -307,7 +307,7 @@
             <objects>
                 <viewController id="3sU-oi-Rl2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kp1-5j-wO2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="tyZ-C5-lLY"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
@@ -318,13 +318,30 @@
             </objects>
             <point key="canvasLocation" x="2142" y="-61"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="cca-cO-mSU">
+            <objects>
+                <tabBarController id="2DM-iJ-y5B" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZmH-9B-9x4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="MIq-Fz-5Wn" kind="presentation" id="zVe-cY-r9a"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2xG-0j-tgI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="383" y="-830"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="uio-7i-aJY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MIq-Fz-5Wn" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vqS-t1-pwf">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.01666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
